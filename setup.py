@@ -11,7 +11,7 @@ setuptools.setup(
     description="scrapy middleware",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/CLannadZSY/Tools",
+    url="https://github.com/CLannadZSY/scrapy-middlewares",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
