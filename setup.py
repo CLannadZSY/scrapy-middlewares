@@ -5,7 +5,7 @@ with open("README.md", "r", encoding='utf-8') as fh:
 
 setuptools.setup(
     name="scrapy_middlewares",
-    version="1.0.0",
+    version="1.0.1",
     author="CLannadZSY",
     author_email="zsymidi@gmail.com",
     description="scrapy middleware",
