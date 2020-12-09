@@ -12,10 +12,10 @@ class ModuleReqMiddleware(ReqMiddleware):
         super(ModuleReqMiddleware, self).__init__(*args, **kwargs)
 
     def process_request(self, request, spider):
-        _module_name = request.module_name
-        if not isinstance(request, ModuleRequest) or not _module_name:
+        if not isinstance(request, ModuleRequest):
             return None
 
+        _module_name = request.module_name
         if _module_name not in MODULE_NAME_LIST:
             self.logger.error(f'modul_name: {_module_name}, not in {MODULE_NAME_LIST}, Please check your modul_name')
             return None
